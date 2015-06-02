@@ -2,7 +2,7 @@ matrix-like
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
-> Validates if a value is matrix-like.
+> Validates if a value is [matrix](https://github.com/compute-io/matrix)-like.
 
 
 ## Installation
@@ -17,18 +17,50 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 ## Usage
 
 ``` javascript
-var foo = require( 'validate.io-matrix-like' );
+var matrixLike = require( 'validate.io-matrix-like' );
 ```
 
-#### foo( value )
+#### matrixLike( value )
 
-What does this function do?
+Validates if a value is [matrix](https://github.com/compute-io/matrix)-like.
+
+``` javascript
+var mat = {
+	'data': new Int8Array( 10 ),
+	'shape': [5,2],
+	'strides': [2,1],
+	'dtype': 'int8',
+	'length': 10
+};
+
+console.log( matrixLike( mat ) );
+// returns true
+```
 
 
 ## Examples
 
 ``` javascript
-var foo = require( 'validate.io-matrix-like' );
+var matrixLike = require( 'validate.io-matrix-like' );
+
+var mat = {
+	'data': new Int8Array( 10 ),
+	'shape': [5,2],
+	'strides': [2,1],
+	'dtype': 'int8',
+	'length': 10
+};
+console.log( matrixLike( mat ) );
+// returns true
+
+console.log( matrixLike( [] ) );
+// returns false
+
+console.log( matrixLike( {} ) );
+// returns false
+
+console.log( matrixLike( null ) );
+// returns false
 ```
 
 To run the example code from the top-level application directory,

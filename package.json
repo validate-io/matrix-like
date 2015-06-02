@@ -26,7 +26,16 @@
     "validate.io",
     "validate",
     "validation",
-    "validator"
+    "validator",
+    "valid",
+    "matrix",
+    "matrixlike",
+    "is",
+    "ismatrix",
+    "compute.io",
+    "compute",
+    "type",
+    "class"
   ],
   "bugs": {
     "url": "https://github.com/validate-io/matrix-like/issues"
