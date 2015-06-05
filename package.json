@@ -35,7 +35,10 @@
     "compute.io",
     "compute",
     "type",
-    "class"
+    "class",
+    "data",
+    "structure",
+    "dstructs"
   ],
   "bugs": {
     "url": "https://github.com/validate-io/matrix-like/issues"

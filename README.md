@@ -2,7 +2,7 @@ matrix-like
 ===
 [![NPM version][npm-image]][npm-url] [![Build Status][travis-image]][travis-url] [![Coverage Status][coveralls-image]][coveralls-url] [![Dependencies][dependencies-image]][dependencies-url]
 
-> Validates if a value is [matrix](https://github.com/compute-io/matrix)-like.
+> Validates if a value is [matrix](https://github.com/dstructs/matrix)-like.
 
 
 ## Installation
@@ -22,7 +22,7 @@ var matrixLike = require( 'validate.io-matrix-like' );
 
 #### matrixLike( value )
 
-Validates if a value is [matrix](https://github.com/compute-io/matrix)-like.
+Validates if a value is [matrix](https://github.com/dstructs/matrix)-like.
 
 ``` javascript
 var mat = {
