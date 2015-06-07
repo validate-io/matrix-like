@@ -28,6 +28,7 @@ function create() {
 	var matrix = {};
 	matrix.data = new Int8Array( 10 );
 	matrix.shape = [5,2];
+	matrix.offset = 0;
 	matrix.strides = [2,1];
 	matrix.dtype = 'int8';
 	matrix.length = 10;
@@ -68,6 +69,10 @@ describe( 'validate.io-matrix-like', function tests() {
 
 		mat = create();
 		mat.shape = true;
+		values.push( mat );
+
+		mat = create();
+		mat.offset = [];
 		values.push( mat );
 
 		mat = create();

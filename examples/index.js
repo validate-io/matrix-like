@@ -5,6 +5,7 @@ var matrixLike = require( './../lib' );
 var mat = {
 	'data': new Int8Array( 10 ),
 	'shape': [5,2],
+	'offset': 0,
 	'strides': [2,1],
 	'dtype': 'int8',
 	'length': 10
